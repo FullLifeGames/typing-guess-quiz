@@ -9,18 +9,29 @@
   <body>
     <main class="app">
       <h1>Pokémon Typing Quiz</h1>
-      <p class="subtitle">Guess the defensive typing from weaknesses, resistances, and immunities.</p>
+      <p class="subtitle">Use battle matchup clues to guess a typing, then try to identify a matching Pokémon.</p>
+
+      <section class="panel controls">
+        <label for="generation">Generation Ruleset</label>
+        <select id="generation"></select>
+      </section>
 
       <section class="panel" id="hints"></section>
 
-      <form id="guess-form" class="panel">
+      <form id="guess-form" class="panel grid-form">
         <label for="primary">Primary type</label>
         <select id="primary" required></select>
 
         <label for="secondary">Secondary type (optional)</label>
         <select id="secondary"></select>
 
-        <button type="submit">Submit Guess</button>
+        <button type="submit">Submit Type Guess</button>
+      </form>
+
+      <form id="pokemon-form" class="panel grid-form">
+        <label for="pokemon">Bonus: guess a Pokémon with this typing</label>
+        <input id="pokemon" placeholder="e.g. Gengar" />
+        <button type="submit">Submit Pokémon Guess</button>
       </form>
 
       <section id="result" class="panel"></section>

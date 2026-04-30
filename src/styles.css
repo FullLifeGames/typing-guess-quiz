@@ -1,13 +1,16 @@
 :root { font-family: Inter, system-ui, Arial, sans-serif; }
 body { margin: 0; background: #0d1117; color: #e6edf3; }
-.app { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+.app { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
 .subtitle { color: #8b949e; }
 .panel { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1rem; margin-top: 1rem; }
+.grid-form { display: grid; gap: 0.35rem; }
 label { display: block; margin-top: 0.6rem; }
-select, button { margin-top: 0.4rem; padding: 0.5rem 0.7rem; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: #e6edf3; }
+select, button, input { margin-top: 0.4rem; padding: 0.5rem 0.7rem; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: #e6edf3; }
 button { cursor: pointer; }
-ul { margin: 0.2rem 0 0.8rem 1rem; }
 .correct { color: #3fb950; }
 .wrong { color: #f85149; }
 .actions { margin-top: 1rem; }
-img.sprite { width: 120px; height: 120px; image-rendering: pixelated; }
+.sprite { width: 160px; height: 160px; object-fit: contain; display: block; margin-top: 0.6rem; }
+.chip { display: inline-block; margin: 0.15rem 0.3rem 0.15rem 0; padding: 0.2rem 0.45rem; border-radius: 999px; background: #21262d; border: 1px solid #30363d; }
+.chip.muted { opacity: 0.7; }
+.small { font-size: 0.9rem; color: #8b949e; }
