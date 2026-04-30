@@ -1,0 +1,13 @@
+:root { font-family: Inter, system-ui, Arial, sans-serif; }
+body { margin: 0; background: #0d1117; color: #e6edf3; }
+.app { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+.subtitle { color: #8b949e; }
+.panel { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1rem; margin-top: 1rem; }
+label { display: block; margin-top: 0.6rem; }
+select, button { margin-top: 0.4rem; padding: 0.5rem 0.7rem; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: #e6edf3; }
+button { cursor: pointer; }
+ul { margin: 0.2rem 0 0.8rem 1rem; }
+.correct { color: #3fb950; }
+.wrong { color: #f85149; }
+.actions { margin-top: 1rem; }
+img.sprite { width: 120px; height: 120px; image-rendering: pixelated; }

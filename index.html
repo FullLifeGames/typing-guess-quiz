@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Typing Quiz</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Pokémon Typing Quiz</h1>
+      <p class="subtitle">Guess the defensive typing from weaknesses, resistances, and immunities.</p>
+
+      <section class="panel" id="hints"></section>
+
+      <form id="guess-form" class="panel">
+        <label for="primary">Primary type</label>
+        <select id="primary" required></select>
+
+        <label for="secondary">Secondary type (optional)</label>
+        <select id="secondary"></select>
+
+        <button type="submit">Submit Guess</button>
+      </form>
+
+      <section id="result" class="panel"></section>
+
+      <div class="actions">
+        <button id="next">Next Question</button>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
