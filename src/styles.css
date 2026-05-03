@@ -299,19 +299,13 @@ input:focus {
   height: 26px;
   flex: 0 0 auto;
   place-items: center;
-  border-radius: 50%;
-  background: var(--type-color);
-  color: #ffffff;
 }
 
 .type-icon svg {
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   fill: none;
   stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
 }
 
 .type-name {
