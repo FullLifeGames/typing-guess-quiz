@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Type Quiz</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>Pokémon Type Quiz</h1>
+        <div class="header-controls">
+          <label class="ruleset-control" for="generation">
+            <span>Gen</span>
+            <select id="generation"></select>
+          </label>
+          <button id="theme-toggle" class="button theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span data-theme-label>Dark</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="quiz-shell" aria-labelledby="quiz-title">
+        <div class="quiz-header">
+          <h2 id="quiz-title">Guess the typing</h2>
+          <button id="next" class="button secondary-button" type="button">Next Question</button>
+        </div>
+
+        <section id="hints" class="matchups" aria-label="Matchup clues"></section>
+
+        <form id="guess-form" class="quiz-form">
+          <label class="field" for="primary">
+            <span>Primary type</span>
+            <select id="primary" required></select>
+          </label>
+
+          <label class="field" for="secondary">
+            <span>Secondary type</span>
+            <select id="secondary"></select>
+          </label>
+
+          <button class="button primary-button" type="submit">Submit Guess</button>
+        </form>
+
+        <section id="result" class="result" aria-live="polite"></section>
+
+        <form id="pokemon-form" class="bonus-form">
+          <div class="field">
+            <label for="pokemon">
+              <span>Bonus Pokemon</span>
+            </label>
+            <div class="pokemon-combobox">
+              <input
+                id="pokemon"
+                role="combobox"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="pokemon-options"
+                autocomplete="off"
+                placeholder="Search Pokemon"
+              />
+              <div id="pokemon-options" class="pokemon-options" role="listbox" hidden></div>
+            </div>
+          </div>
+          <button class="button ghost-button" type="submit">Check Pokemon</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
